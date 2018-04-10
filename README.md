@@ -9,3 +9,12 @@
 ## Test
 
 Open `index.html` in web browser.
+
+### Build Explanation
+
+1. The simple way to compile TypeScript into JavaScript is using `tsc` command line.
+2. `tsconfig.json` is used to "control" the `tsc` command.
+3. We don't invoke `tsc` directly. Instead, we integrate it with `webpack`.
+4. The key integration is the `awesome-typescript-loader` library.
+5. `awesome-typescript-loader` is configured in `webpack.config.js`: `{ test: /\.tsx?$/, loader: "awesome-typescript-loader" },`.
+6. `awesome-typescript-loader` will read `tsconfig.json` file.
