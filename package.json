@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build-dev": "webpack --config webpack.config.js --mode development",
+    "build-prod": "webpack --config webpack.config.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,7 +18,9 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^4.0.1",
+    "css-loader": "^0.28.11",
     "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
     "ts-node": "^5.0.1",
     "typescript": "^2.8.1",
     "webpack": "^4.5.0",
