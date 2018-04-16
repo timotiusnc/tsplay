@@ -6,12 +6,12 @@ import { Clock } from "./clock";
 interface AppProps { }
 
 export default class App extends React.Component<AppProps, {}> {
-    render() {
-        return (
-            <div>
-                <Hello compiler="TypeScript" framework="React" />
-                <Clock />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <Hello compiler="TypeScript" framework="React" />
+        <Clock />
+      </div>
+    );
+  }
 }

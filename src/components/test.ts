@@ -1,13 +1,13 @@
 import { get } from "https";
 
 interface Animal {
-    sound(): void;
+  sound(): void;
 }
 
 interface Bark { }
 
 class Anjing implements Animal, Bark {
-    sound() { }
+  sound() { }
 }
 
 class Kecoa { }
@@ -17,17 +17,17 @@ a.map(val => console.log(val));
 a.forEach(val => console.log(val));
 
 enum Direction {
-    NORTH,
-    EAST,
-    SOUTH,
-    WEST
+  NORTH,
+  EAST,
+  SOUTH,
+  WEST
 }
 
 enum DirectionStr {
-    NORTH = "NORTH",
-    EAST = "EAST",
-    SOUTH = "SOUTH",
-    WEST = "WEST"
+  NORTH = "NORTH",
+  EAST = "EAST",
+  SOUTH = "SOUTH",
+  WEST = "WEST"
 }
 
 console.log('Direction.NORTH', Direction.NORTH, typeof DirectionStr.NORTH);
@@ -59,3 +59,21 @@ console.log('DirectionStr[DirectionStr.NORTH]', DirectionStr[DirectionStr.NORTH]
 
 let x: number[] = [1, 2, 3];
 x.map
+
+function asu(a: number, b?: number): number {
+  return 1;
+}
+
+asu(1, 2);
+
+function kambing(a: number, b: number): number {
+  return 1;
+}
+
+kambing(1);
+
+function sapi(a: number, callback: (i: number, j: number) => void): void {
+
+}
+
+sapi(2, (i: number, j: number) => 3);
