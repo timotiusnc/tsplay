@@ -70,7 +70,7 @@ function kambing(a: number, b: number): number {
   return 1;
 }
 
-kambing(1);
+kambing(1, 2);
 
 function sapi(a: number, callback: (i: number, j: number) => void): void {
 
