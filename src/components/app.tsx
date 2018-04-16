@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import Hello from "./hello";
-import Clock from "./clock";
+import { Hello } from "./hello";
+import { Clock } from "./clock";
 
 interface AppProps { }
 

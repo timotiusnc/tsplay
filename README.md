@@ -18,3 +18,7 @@ Open `index.html` in web browser.
 4. The key integration is the `awesome-typescript-loader` library.
 5. `awesome-typescript-loader` is configured in `webpack.config.js`: `{ test: /\.tsx?$/, loader: "awesome-typescript-loader" },`.
 6. `awesome-typescript-loader` will read `tsconfig.json` file.
+
+### REPL (Read-Eval-Print-Loop) example using [ts-node](https://github.com/TypeStrong/ts-node)
+1. `npx ts-node src/components/test.ts`.
+2. `npx ts-node` (starts TypeScript REPL).

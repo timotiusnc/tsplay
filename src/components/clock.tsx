@@ -4,7 +4,7 @@ interface ClockProps { }
 
 interface ClockState { date: Date; }
 
-export default class Clock extends React.Component<ClockProps, ClockState> {
+export class Clock extends React.Component<ClockProps, ClockState> {
     private timerID: number;
 
     constructor(props: ClockProps) {
