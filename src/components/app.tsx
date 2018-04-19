@@ -1,16 +1,20 @@
 import * as React from "react";
-
 import { Hello } from "./hello";
 import { Clock } from "./clock";
+import * as Logo from '../images/ping.png';
+import '../styles/style.css';
 
 interface AppProps { }
+
+console.log(Logo);
 
 export default class App extends React.Component<AppProps, {}> {
   render() {
     return (
-      <div>
+      <div className='hello'>
         <Hello compiler="TypeScript" framework="React" />
         <Clock />
+        <img src={Logo} alt="PING Icon" />
       </div>
     );
   }

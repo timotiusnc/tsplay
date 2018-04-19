@@ -5,7 +5,7 @@ interface ClockProps { }
 interface ClockState { date: Date; }
 
 export class Clock extends React.Component<ClockProps, ClockState> {
-  private timerID: number;
+  private timerID: number = -1;
 
   constructor(props: ClockProps) {
     super(props);
