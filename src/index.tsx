@@ -1,9 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
 import App from "./components/app";
+import printMe from "./print"
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("example")
-);
+console.log(printMe() + 'sas');
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById("example")
+// );
