@@ -1,3 +1,4 @@
 export default function printMe(): string {
-  return 'Console log from print.js';
+  throw Error('error');
+  // return 'Console log from print.js';
 }

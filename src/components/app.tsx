@@ -12,7 +12,9 @@ export default class App extends React.Component<AppProps, {}> {
   render() {
     return (
       <div className='hello'>
-        <Hello compiler="TypeScript" framework="React" />
+        <Hello compiler="TypeScript" framework="React">
+          {(something: String) => <div>Hello {something}</div>}
+        </Hello>
         <Clock />
         <img src={Logo} alt="PING Icon" />
       </div>
